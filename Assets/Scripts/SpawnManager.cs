@@ -19,10 +19,18 @@ public class SpawnManager : MonoBehaviour
     void Start()
     {
         gameManager.GetComponent<GameManager>();
+
+        // Spawn Sphere
         InvokeRepeating("SpawnSphere", spawnDelay, SpawnInterval());
+
+        // Spawn Sphere In Player
         InvokeRepeating("SpawnSphereEasy", spawnDelay, 0.65f);
-        InvokeRepeating("SpawnBigSphere", 100f, 3f);
-        InvokeRepeating("SpawnMegaSphere", 200f, 7.5f);
+
+        // Spawn  Big Sphere
+        InvokeRepeating("SpawnBigSphere", 60f, 3f);
+
+        // Spawn Mega Sphere
+        InvokeRepeating("SpawnMegaSphere", 120f, 7.5f);
         
     }
 

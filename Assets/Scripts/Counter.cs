@@ -29,7 +29,7 @@ public class Counter : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Player Upgrade
+        // Count
         if (other.gameObject.CompareTag("Sphere"))
         {
             currentToUpgrade++;
@@ -38,6 +38,10 @@ public class Counter : MonoBehaviour
 
             other.gameObject.layer = 1;
         }
+
+
+
+        // Player Upgrade
         if(currentToUpgrade == amountToUpgrade)
         {
             ScalePlayer();;
@@ -45,6 +49,7 @@ public class Counter : MonoBehaviour
             currentToUpgrade = 0;
             amountToUpgrade *= 2;
         }
+
 
         // Difficulty
         if (currentToUpgradeDif == startDifCount)

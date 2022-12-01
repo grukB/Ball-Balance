@@ -12,14 +12,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField] GameObject gameManagerObject;
     GameManager gameManagerComp;
 
-    // Start is called before the first frame update
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
         gameManagerComp = gameManagerObject.GetComponent<GameManager>();
     }
 
-    // Update is called once per frame
     void FixedUpdate()
     {
         if (gameManagerComp.gameIsOn)

@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speaker: {fileID: 1154812521078278591}
+  velocityToColide: 1e+21
 --- !u!114 &3896035863448122164
 MonoBehaviour:
   m_ObjectHideFlags: 0
